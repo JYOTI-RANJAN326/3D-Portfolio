@@ -12,15 +12,15 @@ A modern, interactive **3D Portfolio Website** built with **React.js**, **Three.
 
 ### Home
 
-![Home](screenshots/home.png)
+![Home](3D-Portfolio-main/screenshots/home.png)
 
 ### About
 
-![About](screenshots/about.png)
+![About](3D-Portfolio-main/screenshots/about.png)
 
 ### Contact
 
-![Contact](screenshots/contact.png)
+![Contact](3D-Portfolio-main/screenshots/contacts.png)
 
 ---
 
