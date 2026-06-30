@@ -25,9 +25,6 @@ const Contact = () => {
 		e.preventDefault();
 		setLoading(true);
 
-		// template_7gi2005
-		// service_9u26jss
-		// 4cOuB32Asv8vNcD71
 
 		emailjs
 			.send(
@@ -40,7 +37,7 @@ const Contact = () => {
 					to_email: "ranjanjyoti27022006@gmail.com",
 					message: form.message,
 				},
-				"8aqbP2yzatqlyXJ8i"
+				"8aqbP2yzatqIyXJ8i"
 			)
 			.then(
 				() => {
@@ -111,7 +108,7 @@ const Contact = () => {
 					</label>
 
 					<button
-						type="'submit"
+						type="submit"
 						className="bg-tertiary py-3 px-8 outline-none font-bold w-fit text-white shadow-md shadow-primary rounded-xl"
 					>
 						{loading ? "Sending..." : "Send"}
