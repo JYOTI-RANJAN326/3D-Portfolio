@@ -1,178 +1,67 @@
-# 🚀 3D Developer Portfolio
+# Jyoti Ranjan | 3D Portfolio
 
-A modern, interactive **3D Portfolio Website** built with **React.js**, **Three.js**, **React Three Fiber**, **Framer Motion**, and **Tailwind CSS**. This portfolio showcases my skills, projects, work experience, and provides an easy way to connect with me.
+Personal portfolio of **Jyoti Ranjan**, a third-year B.Tech CSE student at NIT Patna and a LeetCode Knight (contest rating 1866). It features a 3D chessboard scene in which a knight hops in L-shaped moves.
 
-## 🌐 Live Demo
+**Live site:** https://YOUR-PROJECT.vercel.app
 
-👉 https://3-d-portfolio-sepia-two.vercel.app/
+## Features
 
----
+- 3D hero scene built with Three.js (a knight piece hopping across a chessboard, reacting to the mouse and scroll)
+- Fully responsive layout with a sticky sidebar on desktop
+- Light and dark mode that follows the system setting
+- Project showcase with live demo and source links
+- Resume preview with full-screen view and a PDF download button
+- Respects `prefers-reduced-motion`
 
-## 📸 Preview
+## Tech stack
 
-### Home
+- HTML5, CSS3, vanilla JavaScript
+- [Three.js](https://threejs.org/) (r128) for the 3D scene
+- Google Fonts: Bricolage Grotesque and Figtree
+- Hosted on Vercel
 
-![Home](3D-Portfolio-main/screenshots/home.png)
-
-### About
-
-![About](3D-Portfolio-main/screenshots/about.png)
-
-### Contact
-
-![Contact](3D-Portfolio-main/screenshots/contacts.png)
-
----
-
-## ✨ Features
-
-- 🎨 Interactive 3D animations using Three.js
-- ⚡ Smooth page transitions with Framer Motion
-- 📱 Fully Responsive Design
-- 💼 Professional Project Showcase
-- 🛠 Skills & Technologies Section
-- 📚 Experience Timeline
-- 📩 Contact Form using EmailJS
-- 🌍 Fast Deployment with Vercel
-- 🎯 Clean and Modern UI
-
----
-
-## 🛠 Tech Stack
-
-### Frontend
-
-- React.js
-- Vite
-- JavaScript
-- HTML5
-- CSS3
-- Tailwind CSS
-
-### Animation
-
-- Framer Motion
-
-### 3D Graphics
-
-- Three.js
-- React Three Fiber
-- React Three Drei
-
-### Email Service
-
-- EmailJS
-
-### Deployment
-
-- Vercel
-
----
-
-## 📂 Folder Structure
+## Project structure
 
 ```
-3D-Portfolio/
-│
-├── public/
-├── src/
-│   ├── assets/
-│   ├── components/
-│   ├── constants/
-│   ├── hoc/
-│   ├── styles/
-│   ├── utils/
-│   └── App.jsx
-│
-├── package.json
-├── vite.config.js
+.
+├── index.html                 # the whole site (HTML, CSS, JS)
+├── Jyoti_Ranjan_Resume.pdf    # downloadable resume
+├── resume-preview.jpg         # resume image shown on the page
 └── README.md
 ```
 
----
+## Run locally
 
-## ⚙️ Installation
-
-Clone the repository
+No build step is needed.
 
 ```bash
 git clone https://github.com/JYOTI-RANJAN326/3D-Portfolio.git
-```
-
-Move into the project
-
-```bash
 cd 3D-Portfolio
+# open index.html in your browser, or serve it:
+npx serve .
 ```
 
-Install dependencies
+## Deploy
 
-```bash
-npm install
-```
+1. Push the repository to GitHub.
+2. Import it on [Vercel](https://vercel.com) with **Framework Preset: Other** and no build command.
+3. Every push to `main` redeploys automatically.
 
-Run locally
+## Customize
 
-```bash
-npm run dev
-```
+- Text, links and projects: edit the sections in `index.html`.
+- Colors: change the CSS variables at the top of the `<style>` block (`--bg`, `--bl`, `--gd`).
+- Resume: replace `Jyoti_Ranjan_Resume.pdf` and `resume-preview.jpg`.
 
-Build for production
+## Projects featured
 
-```bash
-npm run build
-```
+| Project | Stack | Links |
+| --- | --- | --- |
+| NexLearn, AI-powered learning platform | React, Node.js, Express, MongoDB, Razorpay, Groq AI | [Live](https://nex-learn-two.vercel.app) · [Code](https://github.com/JYOTI-RANJAN326/NexLearn) |
+| NovaChat, real-time AI messenger | React, Socket.IO, MongoDB, Gemini AI | [Live](https://nova-chat-iota.vercel.app) · [Code](https://github.com/JYOTI-RANJAN326/NovaChat) |
 
----
-
-
-## 🚀 Deployment
-
-This project is deployed on **Vercel**.
-
-Every push to the **main** branch automatically triggers a new deployment.
-
----
-
-## 📈 Future Improvements
-
-- Dark / Light Theme
-- Blog Section
-- Download Resume
-- Visitor Counter
-- GitHub Contribution Graph
-- Multi-language Support
-- AI Chat Assistant
-- Better SEO
-
----
-
-## 🤝 Connect With Me
-
-**Name:** Jyoti Ranjan
-
-- GitHub: https://github.com/JYOTI-RANJAN326
+## Contact
 
 - Email: ranjanjyoti27022006@gmail.com
-
----
-
-## ⭐ Show Your Support
-
-If you like this project,
-
-⭐ Star this repository
-
-🍴 Fork it
-
-📢 Share it
-
----
-
-## 📜 License
-
-This project is licensed under the MIT License.
-
----
-
-Made with ❤️ by **Jyoti Ranjan**
+- LinkedIn: [jyoti-ranjan](https://linkedin.com/in/jyoti-ranjan-a304b3327)
+- GitHub: [JYOTI-RANJAN326](https://github.com/JYOTI-RANJAN326)

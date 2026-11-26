@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jyoti Ranjan | Full-Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0f24;--bgs:rgba(10,15,36,.84);--sf:#111a3b;--ln:#26335f;--tx:#eef1ff;--mu:#a3aedb;--bl:#7a9dff;--gd:#ffcf4d;--on:#0a0f24;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f2f4ff;--bgs:rgba(242,244,255,.86);--sf:#e4e9ff;--ln:#c3ccf0;--tx:#0e1534;--mu:#4a5584;--bl:#2f55e0;--gd:#b87a00;--on:#fff}}
+:root[data-theme="light"]{--bg:#f2f4ff;--bgs:rgba(242,244,255,.86);--sf:#e4e9ff;--ln:#c3ccf0;--tx:#0e1534;--mu:#4a5584;--bl:#2f55e0;--gd:#b87a00;--on:#fff}
+:root[data-theme="dark"]{--bg:#0a0f24;--bgs:rgba(10,15,36,.84);--sf:#111a3b;--ln:#26335f;--tx:#eef1ff;--mu:#a3aedb;--bl:#7a9dff;--gd:#ffcf4d;--on:#0a0f24}
+*,*::before,*::after{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:24px}
+body{background:var(--bg);color:var(--tx);font:400 1.05rem/1.65 Figtree,"Segoe UI",system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;letter-spacing:-.02em;line-height:1.08}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gd);outline-offset:3px;border-radius:4px}
+#bg{position:fixed;inset:0;width:100%;height:100%;z-index:0}
+.wrap{position:relative;z-index:1;display:grid;grid-template-columns:270px minmax(0,1fr);max-width:1260px;margin:auto}
+.rail{position:sticky;top:0;height:100vh;padding:44px 28px 36px 36px;display:flex;flex-direction:column;justify-content:space-between}
+.rail .nm{font:800 1.5rem "Bricolage Grotesque",sans-serif;line-height:1.1}
+.rail .sub{color:var(--mu);font-size:.92rem;margin-top:6px}
+.rail nav{display:flex;flex-direction:column;gap:4px;margin-top:36px}
+.rail nav a{text-decoration:none;color:var(--mu);padding:6px 0 6px 14px;border-left:2px solid var(--ln);font-weight:500;transition:color .2s,border-color .2s}
+.rail nav a:hover,.rail nav a.on{color:var(--tx);border-color:var(--gd)}
+.soc{display:flex;flex-direction:column;gap:6px;font-size:.92rem;color:var(--mu)}
+.soc a{text-decoration:none}.soc a:hover{color:var(--tx);text-decoration:underline}
+main{padding:0 40px 40px 20px}
+.sec{background:var(--bgs);backdrop-filter:blur(8px);border:1px solid var(--ln);border-radius:28px;padding:56px 48px;margin-bottom:28px}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:60px 0 40px;background:none;border:0;backdrop-filter:none}
+h1{font-size:clamp(3rem,7.4vw,6.4rem);font-weight:800;max-width:11ch;text-wrap:balance}
+.hero p{max-width:46ch;color:var(--mu);font-size:1.18rem;margin-top:26px}
+.hero p b{color:var(--gd);font-weight:600}
+.act{display:flex;gap:12px;margin-top:34px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 24px;border-radius:12px;border:1.5px solid var(--ln);background:none;color:var(--tx);font:600 1rem Figtree,sans-serif;text-decoration:none;cursor:pointer;transition:background .2s,border-color .2s}
+.btn:hover{border-color:var(--bl)}
+.btn.p{background:var(--gd);border-color:var(--gd);color:var(--on)}.btn.p:hover{filter:brightness(1.08)}
+h2{font-size:clamp(1.9rem,4vw,2.8rem);font-weight:800;margin-bottom:34px}
+.pj{display:grid;grid-template-columns:1fr 1fr;gap:34px;padding:34px 0;border-top:1px solid var(--ln);transition:transform .15s ease-out;transform-style:preserve-3d;will-change:transform}
+.pj:first-of-type{border-top:0;padding-top:0}
+.pj h3{font-size:1.9rem;margin-bottom:8px}.pj .yr{color:var(--gd);font-size:.9rem;font-weight:600}
+.pj p{color:var(--mu)}.pj ul{list-style:none;padding:0;display:grid;gap:10px}
+.pj li{padding-left:18px;position:relative;color:var(--mu);font-size:.97rem}
+.pj li::before{content:"";position:absolute;left:0;top:.68em;width:8px;height:2px;background:var(--bl)}
+.stack{margin-top:14px;font-size:.9rem;color:var(--tx);font-weight:500}
+.lk{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}.lk .btn{padding:8px 18px;font-size:.92rem}
+.more{margin-top:10px;padding-top:26px;border-top:1px solid var(--ln);color:var(--mu)}
+.more a{color:var(--bl);font-weight:600}
+dl{display:grid;grid-template-columns:150px 1fr}
+dt,dd{padding:16px 0;border-top:1px solid var(--ln)}dt{font:600 1.05rem "Bricolage Grotesque",sans-serif}dd{color:var(--mu)}
+dt:first-of-type,dt:first-of-type+dd{border-top:0}
+.tl{display:grid;grid-template-columns:130px 1fr}
+.tl>*{padding:16px 0;border-top:1px solid var(--ln)}.tl .y{color:var(--gd);font-weight:600}.tl b{display:block;font-weight:600}.tl span{color:var(--mu);font-size:.95rem}
+.tl>:nth-child(1),.tl>:nth-child(2){border-top:0}
+.rs{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:34px;align-items:start}
+#ri{width:100%;display:block;border-radius:10px;border:1px solid var(--ln);background:#fff;cursor:zoom-in}
+.rs p{color:var(--mu);margin-bottom:18px}
+.cm{font:800 clamp(1.4rem,3.6vw,2.5rem) "Bricolage Grotesque",sans-serif;word-break:break-all;text-decoration:none;border-bottom:3px solid var(--gd)}
+.cl{display:flex;gap:22px;flex-wrap:wrap;margin-top:26px;color:var(--mu)}.cl a{color:var(--tx);font-weight:500}
+#lb{position:fixed;inset:0;z-index:20;background:rgba(5,7,18,.93);display:none;overflow:auto;padding:calc(20px + env(safe-area-inset-top,0px)) 16px 30px;cursor:zoom-out}
+#lb.o{display:block}#lb img{width:100%;max-width:1100px;display:block;margin:auto;background:#fff;border-radius:8px}
+footer{padding:10px 0 30px;color:var(--mu);font-size:.85rem}
+.hero h1,.hero p,.hero .act{animation:up .9s cubic-bezier(.2,.7,.2,1) both}.hero p{animation-delay:.12s}.hero .act{animation-delay:.24s}
+@keyframes up{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+@media(max-width:900px){
+.wrap{display:block}
+.rail{position:relative;height:auto;padding:22px 20px 0;gap:14px}
+.rail nav{flex-direction:row;flex-wrap:wrap;gap:6px 16px;margin-top:14px}
+.rail nav a{border-left:0;border-bottom:2px solid var(--ln);padding:2px 0}
+.soc{display:none}
+main{padding:0 14px 30px}
+.sec{padding:34px 22px;border-radius:22px}
+.pj,.rs{grid-template-columns:1fr}
+dl,.tl{grid-template-columns:1fr}dt{border-bottom:0!important;padding-bottom:0}dd{border-top:0;padding-top:4px}
+.tl .y{padding-bottom:0;border-bottom:0}.tl>:nth-child(even){border-top:0;padding-top:2px}
+.hero{min-height:84vh}
+}
+.av{width:84px;height:84px;display:block;border-radius:50%;margin-bottom:16px;box-shadow:0 0 0 3px var(--ln)}
+.av.big{width:132px;height:132px;margin-bottom:28px;box-shadow:0 0 0 4px var(--gd),0 18px 50px rgba(0,0,0,.35);animation:fl 5s ease-in-out infinite}
+@keyframes fl{50%{transform:translateY(-8px)}}
+@media(max-width:900px){.av{width:56px;height:56px}.av.big{width:100px;height:100px}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="av" viewBox="0 0 200 200"><defs><linearGradient id="ag" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7a9dff"/><stop offset="1" stop-color="#ffcf4d"/></linearGradient><clipPath id="ac"><circle cx="100" cy="100" r="100"/></clipPath></defs><g clip-path="url(#ac)"><rect width="200" height="200" fill="url(#ag)"/><path d="M18 210C24 158 60 146 100 146C140 146 176 158 182 210Z" fill="#2c3e8f"/><rect x="86" y="124" width="28" height="34" rx="10" fill="#c98f64"/><path d="M80 148L100 172L120 148Z" fill="#c98f64"/><circle cx="62" cy="100" r="8" fill="#c98f64"/><circle cx="138" cy="100" r="8" fill="#c98f64"/><ellipse cx="100" cy="98" rx="38" ry="44" fill="#d9a074"/><path d="M60 94C56 54 82 42 102 42C126 42 144 58 140 94C132 76 120 68 100 68C80 68 68 76 60 94Z" fill="#1b1f3a"/><circle cx="85" cy="101" r="4" fill="#1b1f3a"/><circle cx="115" cy="101" r="4" fill="#1b1f3a"/><g fill="none" stroke="#1b1f3a" stroke-width="3" stroke-linecap="round"><rect x="72" y="90" width="26" height="21" rx="7"/><rect x="102" y="90" width="26" height="21" rx="7"/><path d="M98 98H102M88 120Q100 130 112 120"/></g><path d="M58 98C54 36 146 36 142 98" fill="none" stroke="#ffcf4d" stroke-width="6" stroke-linecap="round"/><rect x="51" y="92" width="12" height="24" rx="6" fill="#ffcf4d"/><rect x="137" y="92" width="12" height="24" rx="6" fill="#ffcf4d"/></g></symbol></svg>
+<canvas id="bg" aria-hidden="true"></canvas>
+<div class="wrap">
+<aside class="rail">
+  <div>
+    <svg class="av" role="img" aria-label="Illustrated avatar of Jyoti Ranjan"><use href="#av"/></svg>
+    <div class="nm">Jyoti Ranjan</div>
+    <div class="sub">B.Tech CSE, NIT Patna, 2028</div>
+    <nav id="nv"><a href="#home" class="on">Intro</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#background">Background</a><a href="#resume">Resume</a><a href="#contact">Contact</a></nav>
+  </div>
+  <div class="soc"><a href="https://github.com/JYOTI-RANJAN326" target="_blank" rel="noopener">GitHub</a><a href="https://linkedin.com/in/jyoti-ranjan-a304b3327" target="_blank" rel="noopener">LinkedIn</a><a href="https://mail.google.com/mail/?view=cm&fs=1&to=ranjanjyoti27022006@gmail.com&su=Internship%20opportunity" target="_blank" rel="noopener">Email me</a></div>
+</aside>
+<main>
+<section id="home" class="sec hero">
+  <svg class="av big" role="img" aria-label="Illustrated avatar of Jyoti Ranjan"><use href="#av"/></svg>
+  <h1>I build full-stack apps with AI inside.</h1>
+  <p>Third-year CSE student at NIT Patna. I ship MERN products with real-time chat and AI assistants, and I solve algorithm problems as a <b>LeetCode Knight rated 1866</b>.</p>
+  <div class="act"><a class="btn p" href="#projects">See my projects</a><a class="btn" href="#contact">Hire me for an internship</a></div>
+</section>
+
+<section id="projects" class="sec">
+  <h2>Projects</h2>
+  <article class="pj">
+    <div><span class="yr">Jul 2026</span><h3>NexLearn</h3><p>A learning platform where instructors sell courses and students learn with an AI assistant.</p>
+      <div class="stack">React, Node.js, Express, MongoDB, Redux Toolkit, Razorpay, Cloudinary, Groq AI</div>
+      <div class="lk"><a class="btn p" href="https://nex-learn-two.vercel.app" target="_blank" rel="noopener">Open live demo</a><a class="btn" href="https://github.com/JYOTI-RANJAN326/NexLearn" target="_blank" rel="noopener">View source</a></div></div>
+    <ul><li>Sign-in with JWT and separate student and instructor roles</li><li>Instructor dashboard for creating courses and uploading media</li><li>Course payments through Razorpay and progress tracking for students</li><li>Deployed on Vercel, Render and MongoDB Atlas</li></ul>
+  </article>
+  <article class="pj">
+    <div><span class="yr">Jul 2026</span><h3>NovaChat</h3><p>A real-time messenger with group chats and built-in AI tools.</p>
+      <div class="stack">React, Node.js, Express, MongoDB, Socket.IO, Tailwind CSS, Gemini AI</div>
+      <div class="lk"><a class="btn p" href="https://nova-chat-iota.vercel.app" target="_blank" rel="noopener">Open live demo</a><a class="btn" href="https://github.com/JYOTI-RANJAN326/NovaChat" target="_blank" rel="noopener">View source</a></div></div>
+    <ul><li>One-to-one and group chats with online status and typing indicators</li><li>Search, pin, archive, mute and star messages</li><li>Gemini powers an assistant, PDF chat and a code reviewer</li><li>Smooth interface built with Redux Toolkit and Framer Motion</li></ul>
+  </article>
+  <p class="more">More work: StudyNotion, CARE-PLUS, HealthCare, Hackathon-Medical, BookStore and a deepfake detector. <a href="https://github.com/JYOTI-RANJAN326?tab=repositories" target="_blank" rel="noopener">Browse all repositories</a></p>
+</section>
+
+<section id="skills" class="sec">
+  <h2>Skills</h2>
+  <dl>
+    <dt>Languages</dt><dd>C++, JavaScript, Python, Java, SQL</dd>
+    <dt>Frontend</dt><dd>React.js, HTML5, CSS3, Tailwind CSS, Redux Toolkit</dd>
+    <dt>Backend</dt><dd>Node.js, Express.js, REST APIs, Socket.IO, JWT</dd>
+    <dt>Databases</dt><dd>MongoDB, SQL</dd>
+    <dt>AI and data</dt><dd>Gemini AI, Groq AI, NumPy, Pandas</dd>
+    <dt>Computer science</dt><dd>Data structures and algorithms, OOP, DBMS, operating systems</dd>
+    <dt>Tools</dt><dd>Git, GitHub, Postman, MongoDB Compass, VS Code, Vercel</dd>
+  </dl>
+</section>
+
+<section id="background" class="sec">
+  <h2>Background</h2>
+  <div class="tl">
+    <div class="y">2024 to 2028</div><div><b>B.Tech, Computer Science and Engineering</b><span>National Institute of Technology, Patna. CGPA 8.48</span></div>
+    <div class="y">Sept 2026</div><div><b>Member, Web and Coding Club</b><span>NIT Patna</span></div>
+    <div class="y">Jul 2026</div><div><b>NPTEL: Joy of Computing using Python</b><span>Elite + Silver</span></div>
+    <div class="y">Ongoing</div><div><b>LeetCode Knight, contest rating 1866</b><span>1000+ problems solved across LeetCode, GeeksforGeeks and Coding Ninjas</span></div>
+    <div class="y">2023</div><div><b>Senior Secondary, 89.2%</b><span>S.D.S.V.M Bataha, Samastipur. Secondary 86.6% in 2021</span></div>
+  </div>
+</section>
+
+<section id="resume" class="sec">
+  <h2>Resume</h2>
+  <div class="rs">
+    <div><p>One page covering my projects, skills and achievements. Tap the preview to read it full screen.</p>
+      <div class="act" style="margin-top:0"><a class="btn p" href="Jyoti_Ranjan_Resume.pdf" download>Download PDF</a><a class="btn" href="https://github.com/JYOTI-RANJAN326/jyoti-ranjan-resume" target="_blank" rel="noopener">Open on GitHub</a></div></div>
+    <img id="ri" alt="Jyoti Ranjan resume preview" src="resume-preview.jpg">
+  </div>
+</section>
+
+<section id="contact" class="sec">
+  <h2>Let’s talk</h2>
+  <p style="color:var(--mu);margin-bottom:22px">I’m looking for software and full-stack internships and placement roles.</p>
+  <a class="cm" href="https://mail.google.com/mail/?view=cm&fs=1&to=ranjanjyoti27022006@gmail.com&su=Internship%20opportunity" target="_blank" rel="noopener">ranjanjyoti27022006@gmail.com</a>
+  <div class="cl"><span>+91-8102434051</span><a href="https://linkedin.com/in/jyoti-ranjan-a304b3327" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/JYOTI-RANJAN326" target="_blank" rel="noopener">GitHub</a></div>
+</section>
+<footer>© 2026 Jyoti Ranjan</footer>
+</main>
+</div>
+<div id="lb"><img id="li" alt="Jyoti Ranjan resume full view"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+  var lb=document.getElementById("lb"),ri=document.getElementById("ri");
+  ri.onclick=function(){document.getElementById("li").src=ri.src;lb.classList.add("o")};lb.onclick=function(){lb.classList.remove("o")};
+  // active nav link
+  var links=[].slice.call(document.querySelectorAll("#nv a"));
+  var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle("on",a.getAttribute("href")==="#"+e.target.id)})}})},{rootMargin:"-40% 0px -55% 0px"});
+  document.querySelectorAll("section").forEach(function(s){so.observe(s)});
+  // project hover tilt
+  document.querySelectorAll(".pj").forEach(function(c){
+    c.addEventListener("mousemove",function(e){var r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform="perspective(1000px) rotateY("+x*3+"deg) rotateX("+(-y*3)+"deg)"});
+    c.addEventListener("mouseleave",function(){c.style.transform=""});
+  });
+  if(!window.THREE)return;
+  // 3D: a chessboard where a knight hops in L-shaped moves (nod to LeetCode Knight)
+  var cv=document.getElementById("bg"),R=new THREE.WebGLRenderer({canvas:cv,antialias:true,alpha:true});
+  R.setPixelRatio(Math.min(devicePixelRatio,2));
+  var S=new THREE.Scene(),C=new THREE.PerspectiveCamera(45,1,.1,100);
+  var cs=function(n){return getComputedStyle(document.documentElement).getPropertyValue(n).trim()||"#7a9dff"};
+  var board=new THREE.Group(),sq=[],N=8;
+  for(var i=0;i<N;i++)for(var j=0;j<N;j++){
+    var m=new THREE.Mesh(new THREE.PlaneGeometry(.94,.94),new THREE.MeshBasicMaterial({color:cs("--bl"),transparent:true,opacity:0,side:THREE.DoubleSide}));
+    m.rotation.x=-Math.PI/2;m.position.set(i-3.5,0,j-3.5);m.userData={b:(i+j)%2?.05:.16,g:0};board.add(m);sq.push(m)}
+  var grid=new THREE.GridHelper(8,8,0x7a9dff,0x7a9dff);grid.material.transparent=true;grid.material.opacity=.28;board.add(grid);
+  var kn=new THREE.Group(),kb=new THREE.Mesh(new THREE.CylinderGeometry(.28,.36,.18,6),new THREE.MeshBasicMaterial({color:0xffcf4d})),
+      kt=new THREE.Mesh(new THREE.OctahedronGeometry(.34),new THREE.MeshBasicMaterial({color:0xffcf4d,wireframe:true}));
+  kt.position.y=.55;kb.position.y=.09;kn.add(kb,kt);board.add(kn);
+  S.add(board);
+  var px=1,pz=0,fx=1,fz=0,tx=1,tz=0,t0=0,hop=1.05,mv=[[1,2],[2,1],[-1,2],[-2,1],[1,-2],[2,-1],[-1,-2],[-2,-1]];
+  function nextMove(){fx=tx;fz=tz;var ok=mv.filter(function(d){var a=fx+d[0],b=fz+d[1];return a>=-3&&a<=4&&b>=-3&&b<=4});var d=ok[Math.floor(Math.random()*ok.length)];tx=fx+d[0];tz=fz+d[1];t0=performance.now()}
+  tx=1;tz=0;nextMove();
+  var mx=0,my=0,sy=0,tick=0;
+  addEventListener("mousemove",function(e){mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5});
+  addEventListener("scroll",function(){sy=Math.min(1,scrollY/innerHeight)});
+  function rs(){R.setSize(innerWidth,innerHeight,false);C.aspect=innerWidth/innerHeight;C.updateProjectionMatrix();board.position.x=innerWidth>900?3.4:0;C.position.set(0,innerWidth>900?9:12,innerWidth>900?10:12)}
+  addEventListener("resize",rs);rs();
+  var still=matchMedia("(prefers-reduced-motion: reduce)").matches;
+  (function loop(){
+    requestAnimationFrame(loop);tick++;
+    if(tick%45===1){var b=cs("--bl"),g=cs("--gd");sq.forEach(function(s){s.material.color.set(b)});grid.material.color.set(b);kb.material.color.set(g);kt.material.color.set(g)}
+    var p=Math.min((performance.now()-t0)/(hop*1000),1);
+    if(p>=1&&!still){var ix=tx+3,iz=tz+3;sq[ix*N+iz].userData.g=1;nextMove();p=0}
+    var e=p*p*(3-2*p),x=fx+(tx-fx)*e,z=fz+(tz-fz)*e;
+    kn.position.set(x-.5,Math.sin(p*Math.PI)*1.5,z-.5);kt.rotation.y+=.03;
+    sq.forEach(function(s){var u=s.userData;u.g*=.985;s.material.opacity=u.b*(document.documentElement.dataset.theme==="light"||(!document.documentElement.dataset.theme&&matchMedia("(prefers-color-scheme: light)").matches)?1.3:1)+u.g*.6});
+    board.rotation.y+=((.55+mx*.6)-board.rotation.y)*.04;
+    board.rotation.x+=((my*.25)-board.rotation.x)*.04;
+    board.position.y=-sy*3;
+    C.lookAt(board.position.x,-sy*3,0);
+    R.render(S,C);
+  })();
+})();
+</script>
+</body>
+</html>
