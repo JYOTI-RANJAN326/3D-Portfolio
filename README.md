@@ -2,7 +2,7 @@
 
 Personal portfolio of **Jyoti Ranjan**, a third-year B.Tech CSE student at NIT Patna and a LeetCode Knight (contest rating 1866). It features a 3D chessboard scene in which a knight hops in L-shaped moves.
 
-**Live site:** https://YOUR-PROJECT.vercel.app
+**Live site:** https://3-d-portfolio-sepia-two.vercel.app/
 
 ## Features
 
